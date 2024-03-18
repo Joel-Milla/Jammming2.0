@@ -1580,6 +1580,10 @@ video {
   max-width: 20rem;
 }
 
+.max-w-64 {
+  max-width: 16rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -19012,6 +19016,10 @@ body {
 
   .md\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .md\:max-w-md {
+    max-width: 28rem;
   }
 
   .md\:grid-cols-1 {

@@ -8,10 +8,8 @@ function Dashboard() {
   return (
     <div className="bg-black">
       <Title />
-      <div className="mt-10">
-        <div className="container mx-auto">
-          <SearchBar />
-        </div>
+      <div className="container mx-auto">
+        <SearchBar />
       </div>
     </div>
   );
