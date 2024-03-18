@@ -1,5 +1,6 @@
 import { Listbox, ListboxItem } from "@nextui-org/react";
-import TrackNextUI from "../Track/TrackNextUI";
+import TrackTremor from "../Track/TrackTremor";
+
 
 const SONGS = [
     {
@@ -144,18 +145,18 @@ const SONGS = [
     }
 ]
 
-function SearchResults() {
+function SelectedSongs() {
     return (
         <>
             <div className=" border-2 border-green-500 rounded-lg text-gray-500 mb-10">
-                <h1 className="text-5xl text-green-500 mb-5">Results</h1>
+                <h1 className="text-5xl text-green-500 mb-5">Selected Songs</h1>
                 <Listbox
                     aria-label="Actions"
                     onAction={(key) => alert(key)}
                 >
                     {SONGS.map((song) => {
                         return (
-                            <ListboxItem key={song.id} color="primary" textValue={song.name}><TrackNextUI song={song} /></ListboxItem>
+                            <ListboxItem key={song.id} color="primary" textValue={song.name}><TrackTremor song={song} /></ListboxItem>
                         )
                     })}
                 </Listbox>
@@ -164,4 +165,4 @@ function SearchResults() {
     );
 }
 
-export default SearchResults;
+export default SelectedSongs;

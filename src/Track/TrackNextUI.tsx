@@ -3,11 +3,11 @@ import { Card, CardHeader, CardBody, CardFooter, Divider, Link } from "@nextui-o
 // Own Model
 import { TrackProperties } from "../Models/Models";
 
-function Track(properties: TrackProperties) {
+function TrackNextUI(properties: TrackProperties) {
     const { song } = properties
     return (
         <>
-            <Card className="">
+            <Card>
                 <CardHeader className="flex gap-3">
                     <h1 className=" text-3xl">{song.name}</h1>
                 </CardHeader>
@@ -40,4 +40,4 @@ function Track(properties: TrackProperties) {
     )
 }
 
-export default Track;
+export default TrackNextUI;
