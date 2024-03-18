@@ -137,5 +137,25 @@ export default {
     },
   ],
   darkMode: "class",
-  plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms'), nextui()],
+  // plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/forms')]
+  plugins: [nextui(
+    {
+      themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#22c55e",
+            },
+          },
+        },
+        dark: {
+          colors: {
+            primary: {
+              DEFAULT: "#22c55e",
+            },
+          },
+        },
+      },
+    }
+  )],
 }
