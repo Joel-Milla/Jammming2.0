@@ -18,7 +18,7 @@ function Track(properties: TrackProperties) {
                             <p className="text-xl text-green-500">Artist:</p>
                             <p>{song.artist}</p>
                         </div>
-                        <Divider orientation="vertical" className="h-5" />
+                        <Divider orientation="vertical" className="h-5 text-wrap" />
                         <div>
                             <p className="text-xl text-green-500">Artist:</p>
                             <p>{song.album}</p>

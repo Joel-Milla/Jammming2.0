@@ -10,7 +10,7 @@ function Dashboard() {
       <Title />
       <div className="container mx-auto mt-10">
         <SearchBar />
-        <div className="flex flex-row justify-center gap-4 mx-auto mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-4 mx-auto mt-10">
           <SearchResults />
           <SearchResults />
         </div>
